@@ -71,7 +71,8 @@ public class CreeperHeal extends JavaPlugin
 
         pm.registerEvents(new CreeperListener(), this);
         pm.registerEvents(new CreeperBlockListener(), this);
-
+        pm.registerEvents(new CannonListener(), this);
+        
         if (CreeperConfig.getBool(CfgVal.LEAVES_VINES))
             pm.registerEvents(new LeavesListener(), this);
 
